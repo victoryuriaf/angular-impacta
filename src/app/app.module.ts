@@ -12,6 +12,10 @@ import { TwoWayComponent } from './components/two-way/two-way.component';
 import { MasterOfPuppetsComponent } from './components/master-of-puppets/master-of-puppets.component';
 import { InputComponent } from './components/input/input.component';
 import { OutputComponent } from './components/output/output.component';
+import { NgIfComponent } from './components/ng-if/ng-if.component';
+import { NgForComponent } from './components/ng-for/ng-for.component';
+import { NgClassComponent } from './components/ng-class/ng-class.component';
+import { NgStyleComponent } from './components/ng-style/ng-style.component';
 
 
 @NgModule({
@@ -24,7 +28,11 @@ import { OutputComponent } from './components/output/output.component';
     TwoWayComponent,
     MasterOfPuppetsComponent,
     InputComponent,
-    OutputComponent
+    OutputComponent,
+    NgIfComponent,
+    NgForComponent,
+    NgClassComponent,
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,

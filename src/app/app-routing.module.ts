@@ -7,6 +7,10 @@ import { PropertyBindingComponent } from './components/property-binding/property
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { TwoWayComponent } from './components/two-way/two-way.component';
 import { MasterOfPuppetsComponent } from './components/master-of-puppets/master-of-puppets.component';
+import { NgIfComponent } from './components/ng-if/ng-if.component';
+import { NgForComponent } from './components/ng-for/ng-for.component';
+import { NgClassComponent } from './components/ng-class/ng-class.component';
+import { NgStyleComponent } from './components/ng-style/ng-style.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -15,7 +19,11 @@ const routes: Routes = [
   {path: 'propbinding', component:PropertyBindingComponent},
   {path:'event', component:EventBindingComponent},
   {path: 'two-way', component: TwoWayComponent},
-  {path: 'master', component: MasterOfPuppetsComponent}
+  {path: 'master', component: MasterOfPuppetsComponent},
+  {path: 'ng-if', component: NgIfComponent},
+  {path: 'ng-for', component: NgForComponent},
+  {path: 'ng-class', component: NgClassComponent},
+  {path: 'ng-style', component: NgStyleComponent}
 ];
 
 @NgModule({
