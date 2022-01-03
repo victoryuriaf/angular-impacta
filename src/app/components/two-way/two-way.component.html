@@ -1,0 +1,13 @@
+<!--usando o two-way binding-->
+<div class= "content">
+    <h2>Two-Way Binding Implementation</h2>
+    <div>
+        <span>Insert your name: </span>
+        <input type="text" [(ngModel)] = "name" />
+    </div>
+    <br/><br/>
+    <div>
+        <span>Your name is: </span>
+        <span>{{ name }}</span>
+    </div>
+</div>
