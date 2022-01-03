@@ -1,0 +1,44 @@
+<div class="content">
+    <h2>*ngIf Directive Implementation</h2>
+    <div>
+        Property "display": <input type="checkbox" [(ngModel)] = "display" />
+    </div>
+    <!--usando *ngIf-->
+    <h3>Direct use - *ngIf</h3>
+    <p *ngIf = "display">
+        Text displayed when the checkbox is "activated" - true
+    </p>
+    <p *ngIf = "!display">
+        Text displayed when the checkbox is "deactivated" - false
+    </p>
+
+    <!--usando *ngIf / else-->
+    <h3>Using *ngIf - else (ng-template)</h3>
+    <p *ngIf = "display; else firstElse">
+        Text displayed when the checkbox is "activated" - true
+    </p>
+    <!-- construindo a mini-view-->
+    <ng-template #firstElse>
+        Text displayed when the checkbox is "deactivated" - false
+    </ng-template>
+
+    <!-- *ngIf - then - else -->
+    <h3>Using *ngIf - then - else</h3>
+    <p *ngIf = "display; then miniViewThen; else newElse">
+    </p>
+    <ng-template #miniViewThen>
+        Text displayed when the checkbox is "activated" - true
+    </ng-template>
+    <ng-template #newElse>
+        Text displayed when the checkbox is "deactivated" - false
+    </ng-template>
+
+    <!--Usando Hidden -->
+    <h3>Using hidden attribute</h3>
+    <p [hidden] = "display">
+        Text displayed when the checkbox is "deactivated" - false
+    </p>
+    <p [hidden] = "!display">
+        Text displayed when when the checkbox is "activated" - true
+    </p>
+</div>

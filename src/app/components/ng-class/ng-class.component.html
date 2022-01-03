@@ -1,0 +1,22 @@
+<div class="content">
+    <h2>ngClass Implementation</h2>
+    <!-- abordagens oferecidas pela diretiva -->
+    <div [ngClass] = "'color size'">
+        <p>Color and Font changed by Props CSS - described in ng-class.component.css (string property)</p>
+    </div>
+    <div ngClass = 'color size'>
+        <p>Color and Font changed by Props CSS - described in ng-class.component.css (simple attribute)</p>
+    </div>
+    <div [ngClass] = "['color', 'size']">
+        <p>Color and Font changed by Props CSS - described in ng-class.component.css (array attribute)</p>
+    </div>
+    <div [ngClass] = "{'color':true, 'size': true}">
+        <p>Color and Font changed by Props CSS - described in ng-class.component.css (object attribute)</p>
+    </div>
+    <div [ngClass] = "cssChangedByVar">
+        <p>Color and Font changed by Props CSS - described in ng-class.component.ts (property-binding)</p>
+    </div>
+    <div [ngClass] = "objCss">
+        <p>Color and Font changed by Props CSS - described in ng-class.component.ts (property-binding)</p>
+    </div>
+</div>

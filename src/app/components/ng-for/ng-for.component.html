@@ -1,0 +1,30 @@
+<div class = "content">
+    <h2>{{ subtitle }}</h2>
+    <table class="tableEdge">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Direction</th>
+                <th>Cast</th>
+                <th>Release Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let x of movies">
+                <td>{{ x.title }}</td>
+                <td>{{ x.direction }}</td>
+                <td>{{ x.cast }}</td>
+                <td>{{ x.releaseYear }}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
+
+<!-- 
+    <ul>
+        <li *ngFor = "let i of movies">
+            {{ i.title }} - {{ i.direction }}
+        </li>
+    </ul>
+ -->
