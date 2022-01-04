@@ -1,0 +1,25 @@
+<div class="content">
+    <h2>Services Implementation</h2>
+
+    <button (click) = "accessListProducts()">Get Products</button>
+    <br />
+
+    <!-- criar a tabela para exibir os dados -->
+
+    <table class= "tableEdge">
+        <thead>
+            <tr>
+                <th>Product Identification</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let x of bagProducts">
+                <td>{{ x.idProduct }}</td>
+                <td>{{ x.nameProduct }}</td>
+                <td>{{ x.priceProduct }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

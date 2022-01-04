@@ -11,6 +11,8 @@ import { NgIfComponent } from './components/ng-if/ng-if.component';
 import { NgForComponent } from './components/ng-for/ng-for.component';
 import { NgClassComponent } from './components/ng-class/ng-class.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
+import { CustomDirComponent } from './components/custom-dir/custom-dir.component';
+import { CompServiceComponent } from './components/comp-service/comp-service.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -23,7 +25,9 @@ const routes: Routes = [
   {path: 'ng-if', component: NgIfComponent},
   {path: 'ng-for', component: NgForComponent},
   {path: 'ng-class', component: NgClassComponent},
-  {path: 'ng-style', component: NgStyleComponent}
+  {path: 'ng-style', component: NgStyleComponent},
+  {path: 'custom-dir', component: CustomDirComponent},
+  {path: 'comp-service', component: CompServiceComponent}
 ];
 
 @NgModule({

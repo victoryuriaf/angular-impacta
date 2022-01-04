@@ -1,1 +1,22 @@
-<p>ng-style works!</p>
+<div class="content">
+    <h2>ngStyle Implementation</h2>
+    <!-- Primeira parte-->
+    <br /><br />
+    <input type="text" [(ngModel)] = "colors" />
+    <div [ngStyle] = "{'color':colors}">
+        Change text color!
+    </div>
+
+    <!-- Segunda parte-->
+    <br />
+    <input type="number" [(ngModel)] = "size" />
+    <div [ngStyle] = "{'font-size.px':size}">
+        Change text size!
+    </div>
+
+    <!-- Terceira parte-->
+    <br />
+    <div [ngStyle] = "objStyle">
+        Change color and text font-size - by property described in ng-style.component.ts
+    </div>
+</div>
